@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="crm_lead_view_form_inherit_boom" model="ir.ui.view">
+        <field name="name">crm.lead.form.inherit.boom</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+        <field name="arch" type="xml">
+            
+            <xpath expr="//header" position="inside">
+                <button name="action_approve_lead" type="object" string="Aprobar Orden" class="oe_highlight" invisible="x_approved_by != False"/>
+            </xpath>
+
+            <xpath expr="//group[@name='lead_info']" position="after">
+                <group string="Información Técnica de Despacho">
+                    <field name="x_lead_category"/>
+                    <field name="x_contract_reference"/>
+                    <field name="x_installation_required"/>
+                    <field name="x_installation_date" invisible="not x_installation_required"/>
+                    <field name="x_support_required"/>
+                </group>
+                <group string="Estado de Aprobación">
+                    <field name="x_delivery_deadline"/>
+                    <field name="x_approved_by"/>
+                    <field name="x_approved_date"/>
+                    <field name="x_duration_since_approved"/>
+                </group>
+            </xpath>
+            
+        </field>
+    </record>
+</odoo>
