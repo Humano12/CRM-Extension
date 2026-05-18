@@ -13,10 +13,10 @@ Módulo personalizado para Odoo V18 que extiende las capacidades del módulo nat
 
 
 ## Instalación
-1 Descargar o clonar el repositorio dentro de la carpeta de complementos del servidor
-2 Activar el Modo Desarrollador
-3 Actualizar lista de aplicaciones
-4 Buscar: Boom Solutions CRM Extension y Activar.
+1. Descargar o clonar el repositorio dentro de la carpeta de complementos del servidor
+2. Activar el Modo Desarrollador
+3. Actualizar lista de aplicaciones
+4. Buscar: Boom Solutions CRM Extension y Activar.
 
 
 ## Cómo Probar el Módulo
